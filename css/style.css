@@ -2,5 +2,56 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* TYPO SETTINGS */
+* {
   font-family: 'Roboto', sans-serif;
+}
+
+header {
+  color: white;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+/* /TYPO SETTINGS */
+
+.container {
+  margin: auto;
+  width: 85%;
+}
+
+header {
+  background-color: #0C325A;
+  background-image: url(../img/background-header.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header .upper-header > * {
+  display: inline-block;
+  padding-top: 15px ;
+  position: relative;
+}
+
+header .upper-header img {
+  position: relative;
+  top: 8px;
+}
+
+header .upper-header .main-nav {
+  padding: 0 100px 0 50px;
+}
+
+header .upper-header nav li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 10px;
+}
+
+header .lower-header {
+  height: 300px;
 }
