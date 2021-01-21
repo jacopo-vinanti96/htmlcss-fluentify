@@ -114,6 +114,7 @@ main .mid-sections {
 main .mid-sections section {
   float: left;
   width: calc(100% / 3);
+  padding-bottom: 40px;
 }
 
 main .mid-sections img {
@@ -129,11 +130,12 @@ main .mid-sections h3 {
   color: #7CBB02;
 }
 
-main .mid-sections hr {
+main .mid-sections section hr {
   width: 20%;
   position: relative;
   left: 50%;
   transform: translate(-50%);
+  border: solid 0.25px #797979;
 }
 
 main .mid-sections p {
@@ -141,4 +143,9 @@ main .mid-sections p {
   color: grey;
   line-height: 1.5em;
   font-size: 18px;
+}
+
+main hr.hr-main-divider {
+  width: 95%;
+  margin: 40px auto;
 }
