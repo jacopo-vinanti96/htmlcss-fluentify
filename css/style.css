@@ -15,7 +15,6 @@ header {
 
 header a {
   color: white;
-  text-decoration: none;
 }
 
 p {
@@ -33,6 +32,8 @@ p {
   background-color: #7CBB02;
   border-radius: 10px;
   text-transform: uppercase;
+  text-decoration: none;
+  color: white;
 }
 
 header {
@@ -66,6 +67,7 @@ header .upper-header .log-in {
   padding: 10px 30px;
   border: solid 2px white;
   border-radius: 7.5px;
+  text-decoration: none;
 }
 
 header .upper-header .green-button-link {
@@ -156,7 +158,8 @@ main hr.hr-main-divider {
 }
 
 main .mid-sections {
-margin-bottom: 40px;
+  margin-bottom: 40px;
+  padding: 0 3%;
 }
 
 main .mid-sections img {
@@ -167,7 +170,7 @@ main .mid-sections img {
 main .mid-sections aside {
   width: 40%;
   display: inline-block;
-  padding-left: 8%;
+  margin-left: 4%;
 }
 
 main .mid-sections aside > * {
@@ -185,9 +188,26 @@ font-size: 20px;
 main .bottom-sections.background {
   width: 100%;
 }
+main .bottom-sections h3, main .bottom-sections .select-plan {
+  display: inline-block;
+}
 
-main .bottom-sections .select-a-plan .green-button-link {
+main .bottom-sections h3 {
+  font-size: 27.5px;
+}
+
+main .bottom-sections .select-plan .green-button-link {
 padding: 20px;
 font-size: 20px;
-display: inline-block;
+}
+
+main .bottom-sections .help {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+main .bottom-sections > .green-button-link {
+
+
 }
