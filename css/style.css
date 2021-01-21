@@ -39,7 +39,7 @@ header .upper-header > * {
   display: inline-block;
   padding-top: 15px ;
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 header .upper-header img {
@@ -89,4 +89,56 @@ header .lower-header .green-button-link {
   font-size: 20px;
   margin-top: 30px;
   display: inline-block;
+}
+
+/* MAIN SETTINGS */
+main .slogan-title {
+  padding: 40px 0;
+  background-color: #D3D3D3;
+  text-align: center;
+}
+
+main .slogan-title h2 {
+  font-size: 27.5px;
+}
+
+main .slogan-title p {
+  color: grey;
+  font-size: 18px;
+}
+
+main .mid-sections {
+  text-align: center;
+}
+
+main .mid-sections section {
+  float: left;
+  width: calc(100% / 3);
+}
+
+main .mid-sections img {
+  height: 200px;
+  width: auto;
+  vertical-align: baseline;
+  margin: 40px 0;
+}
+
+main .mid-sections h3 {
+  padding-bottom: 40px;
+  font-size: 27.5px;
+  color: #7CBB02;
+}
+
+main .mid-sections hr {
+  width: 20%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+main .mid-sections p {
+  padding-top: 40px;
+  color: grey;
+  line-height: 1.5em;
+  font-size: 18px;
 }
