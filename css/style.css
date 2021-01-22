@@ -250,6 +250,12 @@ footer .bottom-sections .select-plan .select {
 
 footer .bottom-sections .select-plan .select-right {
   float: right;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 8px solid grey;
+  transform: translateY(7px);
 }
 
 footer .bottom-sections .select-plan .green-button-link {
