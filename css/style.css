@@ -15,69 +15,86 @@ header {
 
 header a {
   color: white;
+  text-decoration: none;
 }
 
 p {
   color: grey;
 }
-
 /* /TYPO SETTINGS */
 
+/* REPEATED SETTINGS */
 .container {
   margin: auto;
-  width: 85%;
+  width: 79.5%;
 }
 
 .green-button-link {
   background-color: #7CBB02;
-  border-radius: 10px;
+  border-radius: 6px;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
 }
 
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* /REPEATED SETTINGS */
+
+/* HEADER SETTINGS */
 header {
   background-color: #0C325A;
 }
 
+header .upper-header {
+  line-height: 50px;
+}
+
 header .upper-header > * {
-  display: inline-block;
+  float: left;
   padding-top: 15px ;
-  position: relative;
   font-size: 12px;
 }
 
 header .upper-header img {
-  position: relative;
-  top: 8px;
+  width: 10%;
 }
 
 header .upper-header .main-nav {
-  padding: 0 100px 0 50px;
+  padding-left: 70px;
 }
 
 header .upper-header nav li {
   display: inline-block;
   list-style: none;
-  margin: 0 10px;
   text-transform: uppercase;
 }
 
+header .upper-header nav li:not(:last-child) {
+margin-right: 20px;
+}
+
+header .upper-header nav.engagement-account-nav {
+  float: right;
+}
+
 header .upper-header .log-in {
-  padding: 10px 30px;
-  border: solid 2px white;
-  border-radius: 7.5px;
+  padding: 10px 32px;
+  border: solid 1px white;
+  border-radius: 5.5px;
   text-decoration: none;
 }
 
 header .upper-header .green-button-link {
-  border-radius: 7.5px;
-  padding: 10px;
+  padding: 10px 12px;
 }
 
 header .lower-header.background-header {
-  margin-top: 70px;
-  height: 400px;
+  margin-top: 90px;
+  height: 450px;
   background-image: url(../img/background-header.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -85,17 +102,19 @@ header .lower-header.background-header {
 }
 
 header .lower-header h1 {
-  font-size: 50px;
-  width:50%;
-  padding-top: 50px;
+  width:55%;
+  padding-top: 70px;
+  font-size: 55px;
+  font-weight: 500;
 }
 
 header .lower-header .green-button-link {
-  padding: 20px;
-  font-size: 20px;
-  margin-top: 30px;
+  padding: 25px 20px;
+  font-size: 16px;
+  margin-top: 40px;
   display: inline-block;
 }
+/* /HEADER SETTINGS */
 
 /* MAIN SETTINGS */
 .background-main {
@@ -122,18 +141,19 @@ main .top-sections {
 main .top-sections section {
   float: left;
   width: calc(100% / 3);
-  padding: 0px 10px 40px 10px;
+  padding: 0px 10px 30px 10px;
 }
 
 main .top-sections img {
   height: 200px;
   width: auto;
   vertical-align: baseline;
-  margin: 40px 0;
+  margin: 30px 0 20px 0;
+  padding-top: 10px;
 }
 
 main .top-sections h3 {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   font-size: 27.5px;
   color: #7CBB02;
 }
@@ -163,14 +183,14 @@ main .mid-sections {
 }
 
 main .mid-sections img {
+  float: left;
   width: 50%;
-  vertical-align: top;
+  padding-right: 3%;
+  /* vertical-align: top; */
 }
 
 main .mid-sections aside {
-  width: 40%;
-  display: inline-block;
-  margin-left: 4%;
+  margin-left: 55%;
 }
 
 main .mid-sections aside > * {
@@ -178,36 +198,41 @@ main .mid-sections aside > * {
 }
 
 main .mid-sections aside h3 {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 main .mid-sections aside p {
 font-size: 20px;
 }
+/* /MAIN */
 
-main .bottom-sections.background {
+/* FOOTER */
+footer.background-main {
   width: 100%;
 }
-main .bottom-sections h3, main .bottom-sections .select-plan {
+
+footer .bottom-sections h3, footer .bottom-sections .select-plan {
   display: inline-block;
 }
 
-main .bottom-sections h3 {
+footer .bottom-sections .select-plan {
+  padding-left: 70%;
+}
+
+footer .bottom-sections h3 {
   font-size: 27.5px;
 }
 
-main .bottom-sections .select-plan .green-button-link {
+footer .bottom-sections .select-plan .green-button-link {
 padding: 20px;
 font-size: 20px;
 }
 
-main .bottom-sections .help {
+footer .bottom-sections .help {
   position: fixed;
   bottom: 0;
   right: 0;
 }
 
-main .bottom-sections > .green-button-link {
-
-
+footer .bottom-sections > .green-button-link {
 }
