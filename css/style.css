@@ -74,7 +74,7 @@ header .upper-header nav li {
 }
 
 header .upper-header nav li:not(:last-child) {
-margin-right: 20px;
+  margin-right: 20px;
 }
 
 header .upper-header nav.engagement-account-nav {
@@ -84,7 +84,7 @@ header .upper-header nav.engagement-account-nav {
 header .upper-header .log-in {
   padding: 10px 32px;
   border: solid 1px white;
-  border-radius: 5.5px;
+  border-radius: 6px;
   text-decoration: none;
 }
 
@@ -119,11 +119,14 @@ header .lower-header .green-button-link {
 
 /* MAIN SETTINGS */
 .background-main {
-background-color: #D3D3D3;
-width: 100%;
+  background-color: #D3D3D3;
+  width: 100%;
 }
 
-main .slogan-title.background-main {
+/* SLOGAN SECTION */
+main div.slogan-title {
+  margin: auto;
+  width: 60%;
   text-align: center;
   padding: 45px 0px;
 }
@@ -137,22 +140,23 @@ main .slogan-title p {
   font-size: 20px;
 }
 
+/* TOP SECTIONS */
 main .top-sections {
   text-align: center;
 }
 
 main .top-sections section {
   float: left;
-  width: calc((100% - (2.5% * 4)) / 3);
+  width: 30%;
   padding-bottom: 30px;
 }
 
-main .top-sections section:first-child, main .top-sections section:nth-child(2){
-margin-right: 2.5%;
+main .top-sections section.col-left {
+  margin-right: 5%;
 }
 
-main .top-sections section:nth-child(3), main .top-sections section:nth-child(2){
-margin-left: 2.5%;
+main .top-sections section.col-right {
+  margin-left: 5%;
 }
 
 main .top-sections img {
@@ -189,6 +193,7 @@ main div.hr-main-divider {
   border-bottom: solid 1px  #D7D7D7;
 }
 
+/* MID SECTIONS */
 main .mid-sections {
   margin-bottom: 40px;
   padding: 0 3%;
@@ -213,17 +218,13 @@ main .mid-sections aside h3 {
 }
 
 main .mid-sections aside p {
-font-size: 21px;
+  font-size: 21px;
 }
 /* /MAIN SETTINGS */
 
 /* FOOTER SETTINGS */
 footer.background-main {
   padding: 50px 0px;
-}
-
-footer .bottom-sections {
-
 }
 
 footer .bottom-sections h4 {
@@ -248,7 +249,7 @@ footer .bottom-sections .select-plan .select {
   border-bottom: solid 2px grey;
 }
 
-footer .bottom-sections .select-plan .select-right {
+footer .bottom-sections .select-plan .select-caret-down {
   float: right;
 	width: 0;
 	height: 0;
@@ -261,8 +262,8 @@ footer .bottom-sections .select-plan .select-right {
 footer .bottom-sections .select-plan .green-button-link {
   padding: 20px 15px;
 }
-/* /SELECT SECTION SETTINGS */
 
+/* FIXED BUTTON */
 footer.background-main .help-fixed {
   position: fixed;
   bottom: 10px;
