@@ -93,12 +93,13 @@ header .upper-header .green-button-link {
 }
 
 header .lower-header.background-header {
-  margin-top: 90px;
-  height: 450px;
+  margin-top: 80px;
+  padding-top: 10px;
+  height: 460px;
   background-image: url(../img/background-header.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 115% 100%;
+  background-position: 120% 100%;
 }
 
 header .lower-header h1 {
@@ -119,15 +120,17 @@ header .lower-header .green-button-link {
 /* MAIN SETTINGS */
 .background-main {
 background-color: #D3D3D3;
+width: 100%;
 }
 
 main .slogan-title.background-main {
   text-align: center;
-  padding: 40px 0px;
+  padding: 45px 0px;
 }
 
 main .slogan-title h2 {
   font-size: 27.5px;
+  padding-bottom: 12px;
 }
 
 main .slogan-title p {
@@ -140,13 +143,20 @@ main .top-sections {
 
 main .top-sections section {
   float: left;
-  width: calc(100% / 3);
-  padding: 0px 10px 30px 10px;
+  width: calc((100% - (2.5% * 4)) / 3);
+  padding-bottom: 30px;
+}
+
+main .top-sections section:first-child, main .top-sections section:nth-child(2){
+margin-right: 2.5%;
+}
+
+main .top-sections section:nth-child(3), main .top-sections section:nth-child(2){
+margin-left: 2.5%;
 }
 
 main .top-sections img {
-  height: 200px;
-  width: auto;
+  height: 180px;
   vertical-align: baseline;
   margin: 30px 0 20px 0;
   padding-top: 10px;
@@ -154,27 +164,29 @@ main .top-sections img {
 
 main .top-sections h3 {
   padding-bottom: 30px;
-  font-size: 27.5px;
-  color: #7CBB02;
+  font-size: 28.5px;
+  font-weight: 500;
+  color: #7ABA14;
 }
 
-main .top-sections section hr {
+main .top-sections section .hr-title-divider {
   width: 20%;
   position: relative;
   left: 50%;
   transform: translate(-50%);
-  border: solid 0.25px #797979;
+  border-bottom: solid 1px #797979;
 }
 
 main .top-sections p {
-  padding-top: 40px;
+  padding-top: 30px;
   line-height: 1.5em;
-  font-size: 20px;
+  font-size: 19.5px;
 }
 
-main hr.hr-main-divider {
+main div.hr-main-divider {
   width: 95%;
   margin: 40px auto;
+  border-bottom: solid 1px  #D7D7D7;
 }
 
 main .mid-sections {
@@ -186,7 +198,6 @@ main .mid-sections img {
   float: left;
   width: 50%;
   padding-right: 3%;
-  /* vertical-align: top; */
 }
 
 main .mid-sections aside {
@@ -202,25 +213,29 @@ main .mid-sections aside h3 {
 }
 
 main .mid-sections aside p {
-font-size: 20px;
+font-size: 21px;
 }
-/* /MAIN */
+/* /MAIN SETTINGS */
 
-/* FOOTER */
+/* FOOTER SETTINGS */
 footer.background-main {
-  width: 100%;
+  padding: 40px 0px;
 }
 
-footer .bottom-sections h3, footer .bottom-sections .select-plan {
-  display: inline-block;
+footer .bottom-sections {
+  line-height: 40px;
+}
+
+footer .bottom-sections h4 {
+  float: left;
 }
 
 footer .bottom-sections .select-plan {
-  padding-left: 70%;
+  float: right;
 }
 
-footer .bottom-sections h3 {
-  font-size: 27.5px;
+footer .bottom-sections h4 {
+  font-size: 35px;
 }
 
 footer .bottom-sections .select-plan .green-button-link {
@@ -228,11 +243,12 @@ padding: 20px;
 font-size: 20px;
 }
 
-footer .bottom-sections .help {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
 
 footer .bottom-sections > .green-button-link {
 }
+
+/* footer.background-main .help-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 13.5%;
+} */
