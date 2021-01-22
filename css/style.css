@@ -219,36 +219,50 @@ font-size: 21px;
 
 /* FOOTER SETTINGS */
 footer.background-main {
-  padding: 40px 0px;
+  padding: 50px 0px;
 }
 
 footer .bottom-sections {
-  line-height: 40px;
+
 }
 
 footer .bottom-sections h4 {
   float: left;
+  font-size: 35px;
+  line-height: 64px;
 }
 
+/* SELECT SECTION SETTINGS */
 footer .bottom-sections .select-plan {
+  float: right;
+  color: grey;
+}
+
+footer .bottom-sections .select-plan > * {
+  display: inline-block;
+}
+
+footer .bottom-sections .select-plan .select {
+  min-width: 150px;
+  margin: 0 25px;
+  border-bottom: solid 2px grey;
+}
+
+footer .bottom-sections .select-plan .select-right {
   float: right;
 }
 
-footer .bottom-sections h4 {
-  font-size: 35px;
-}
-
 footer .bottom-sections .select-plan .green-button-link {
-padding: 20px;
-font-size: 20px;
+  padding: 20px 15px;
 }
+/* /SELECT SECTION SETTINGS */
 
-
-footer .bottom-sections > .green-button-link {
-}
-
-/* footer.background-main .help-fixed {
+footer.background-main .help-fixed {
   position: fixed;
-  bottom: 0;
-  right: 13.5%;
-} */
+  bottom: 10px;
+  right: 15.8%;
+}
+
+footer.background-main .help-fixed .green-button-link {
+  padding: 10px;
+}
