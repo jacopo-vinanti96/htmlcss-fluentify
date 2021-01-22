@@ -249,7 +249,6 @@ footer .bottom-sections .select-plan .select {
   min-width: 150px;
   margin: 0 25px;
   border-bottom: solid 2px grey;
-
 }
 
 footer .bottom-sections .select-plan .select-caret-down {
@@ -259,7 +258,7 @@ footer .bottom-sections .select-plan .select-caret-down {
 	border-left: 7px solid transparent;
 	border-right: 7px solid transparent;
 	border-top: 8px solid grey;
-  transform: translateY(8px);
+  transform: translateY(8px)
 }
 
 footer .bottom-sections .select-plan .green-button-link {
